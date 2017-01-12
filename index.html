@@ -1,21 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Random Quote Machine</title>
+	<title>A Song of Ice and Fire Quotes</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/slate.bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+<br>
+<div class="container jumbotron">
 
-<div class="container">
-
-	<h1>Random Quote Machine</h1>
+	<h1>A Song of Ice and Fire Quotes</h1>
 	<p id="quote"></p>
-	<button class="btn btn-primary" id="quoteButton">New Quote</button>
+	<button class="btn btn-primary" id="quoteButton" onclick="this.blur()">New Quote</button>
+	
+	<a href="" class="twitter-share-button">
+		<button class="btn btn-primary" id="twitterButton" onclick="this.blur()">Tweet</button>
+	</a>
+
+	
 
 </div>
 
+<footer class="container">
+    <p><a href="http://codepen.io/jmarshcodepen/" target="_blank">J Marsh</a> made this.</p>
+</footer>
 
 	<script src="css/bootstrap.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
