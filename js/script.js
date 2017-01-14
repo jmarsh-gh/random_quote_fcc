@@ -1,6 +1,7 @@
 function main(){
 
 	var quoteButton = document.querySelector("#quoteButton");
+	var twitterButton = document.querySelector("#twitterButton");
 	var quote = document.querySelector("#quote");
 	var buttonArray = ["primary", "success", "warning", "info"];
 	var color = 0;
@@ -41,9 +42,8 @@ function main(){
 		} else {
 			color = 0;
 		}
-		for(var i = 0; i < 2; i++){
-			buttons[i].setAttribute("class", "btn btn-" + buttonArray[color]);
-		};
+		quoteButton.setAttribute("class", "btn btn-" + buttonArray[color]);
+		twitterButton.setAttribute("class", "fa fa-twitter btn btn-" + buttonArray[color]);
 	});//quoteButton
 }
 
